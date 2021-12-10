@@ -1,0 +1,140 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+
+
+.navigation{
+height: 50px;
+/* background-color: aqua; */
+width: 100%;
+display: flex;
+justify-content: space-between;
+align-items: center;
+font-family: var(--font1)
+}
+.nav-left{
+font-size: 30px;
+display: flex;
+}
+.nav-left ul{
+    display: flex;
+    align-items: center;
+    margin: 0px 250px;
+    font-size: 18px;
+   
+}
+.nav-left ul li{
+
+    list-style: none;
+    margin: 0px 14px;
+    font-family: var(--font2);
+ 
+}
+.nav-left ul li a:hover{
+    color:white;
+    background-color:black;
+    font-weight: bolder;
+}
+.nav-left ul li a{
+ text-decoration: none;
+ color: black;
+ transition: all 0.3s ease-in-out; 
+}
+
+.nav-right{
+width: 700px;
+}
+.content{
+
+    display: flex;
+    height: 100%;
+    margin-top: 30px;
+    padding: 9px;
+    /* background-color: white; */
+
+    position: relative;
+}
+.content::after{
+    content:"";
+    background-image: url('/image/home.svg.jpg');
+    position: absolute;
+    width: 100%;
+    height: inherit;
+    opacity: 0.3;
+}
+.content-left{
+    font-family: var(--font1);
+    /* width: 50%; */
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
+    padding:50px;
+    z-index: 1;
+    /* z-index ko 1 isliye kiya taaki content ka text select ho jaye on screen */
+
+}
+.content-right{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.content-right img{
+    height: 300px;
+    border: 8px solid black;
+    border-radius: 10000px;
+
+}
+.home-articles{
+/* height: 455px; */
+padding-top: 12px;
+/* background-color: rgb(231, 195, 195); */
+margin-top: 23px;
+
+position: relative;
+}
+.year-box{
+    position: absolute;
+    width: 200px;
+    height: 100px;
+    /* background-color: blue; */
+    right: 200px;
+    top: 10px;
+}
+.home-article{
+    border: 2px solid black;
+    width: 1200px;
+    border-radius: 120px;
+    display: flex;
+    margin: 25px;
+
+}
+.home-article img{
+    width: 300px;
+}
+.home-article-content{
+ 
+    align-self: center;
+    padding: 29px;
+}
+.home-article-content a{
+text-decoration: none;
+color: black;
+}
+.content-father{
+    margin-left: 5px;
+}
+.footer{
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background-color: black;
+    
+}
+.footer a{color: white;}
